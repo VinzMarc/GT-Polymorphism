@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Base class
 class Employee {
 public:
     virtual void showDetails() {
@@ -9,7 +8,6 @@ public:
     }
 };
 
-// Derived class - Manager
 class Manager : public Employee {
 public:
     void showDetails() override {
@@ -17,7 +15,6 @@ public:
     }
 };
 
-// Derived class - Developer
 class Developer : public Employee {
 public:
     void showDetails() override {
@@ -46,7 +43,6 @@ int main() {
 
     emp->showDetails();
 
-    // Clean up memory
     delete emp;
 
     return 0;
